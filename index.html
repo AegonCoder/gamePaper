@@ -3,18 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Juego</title>
+    <title>Rock Paper Scissors</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Bienvenido a Mi Juego</h1>
+        <h1>Rock Paper Scissors</h1>
     </header>
     <main>
-        
+        <div id="game-container">
+            <div class="buttons">
+                <button id="rock" class="choice-btn">✊ Rock</button>
+                <button id="paper" class="choice-btn">✋ Paper</button>
+                <button id="scissors" class="choice-btn">✌️ Scissors</button>
+            </div>
+            <div id="choices">
+                <div id="player-choice" class="choice-display"></div>
+                <div id="computer-choice" class="choice-display"></div>
+            </div>
+            <div id="results"></div>
+            <div id="score"></div>
+            <button id="reset-btn" class="hidden">Jugar de nuevo</button>
+        </div>
     </main>
     <footer>
-        <p>&copy; 2024 Mi Juego</p>
+        <p>&copy; 2024 Rock Paper Scissors Game</p>
     </footer>
     <script src="gamepaper.js"></script>
 </body>
